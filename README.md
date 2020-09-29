@@ -63,3 +63,10 @@ outlierFraction = len(fraud)/float(len(valid))
 print(outlierFraction) 
 print('Fraud Cases: {}'.format(len(data[data['Class'] == 1]))) 
 print('Valid Transactions: {}'.format(len(data[data['Class'] == 0]))) 
+Only 0.17% fraudulent transaction out all the transactions. The data is highly Unbalanced. Lets first apply our models without balancing it and if we don’t get a good accuracy then we can find a way to balance this dataset. But first, let’s implement the model without it and will balance the data only if needed.
+
+Code : Print the amount details for Fraudulent Transaction
+
+filter_none
+brightness_4
+print(“Amount details of the fraudulent transaction
