@@ -70,3 +70,18 @@ Code : Print the amount details for Fraudulent Transaction
 filter_none
 brightness_4
 print(“Amount details of the fraudulent transaction
+fraud.Amount.describe() 
+Output :
+
+Amount details of the fraudulent transaction
+count     492.000000
+mean      122.211321
+std       256.683288
+min         0.000000
+25%         1.000000
+50%         9.250000
+75%       105.890000
+max      2125.870000
+Name: Amount, dtype: float64
+
+Code : Print the amount details for Normal Transaction
