@@ -11,3 +11,9 @@ Before going to the code it is requested to work on a jupyter notebook. If not i
 You can download the dataset from this link
 If the link is not working please go to this link and login to kaggle to download the dataset.
 Code : Importing all the necessary Librarie
+# import the necessary packages 
+import numpy as np 
+import pandas as pd 
+import matplotlib.pyplot as plt 
+import seaborn as sns 
+from matplotlib import gridspec
