@@ -108,3 +108,19 @@ corrmat = data.corr()
 fig = plt.figure(figsize = (12, 9)) 
 sns.heatmap(corrmat, vmax = .8, square = True) 
 plt.show() 
+In the HeatMap we can clearly see that most of the features do not correlate to other features but there are some features that either has a positive or a negative correlation with each other. For example, V2 and V5 are highly negatively correlated with the feature called Amount. We also see some correlation with V20 and Amount. This gives us a deeper understanding of the Data available to us.
+
+Code : Separating the X and the Y values
+Dividing the data into inputs parameters and outputs value format
+
+filter_none
+brightness_4
+# dividing the X and the Y from the dataset 
+X = data.drop(['Class'], axis = 1) 
+Y = data["Class"] 
+print(X.shape) 
+print(Y.shape) 
+# getting just the values for the sake of processing  
+# (its a numpy array with no columns) 
+xData = X.values 
+yData = Y.values 
