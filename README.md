@@ -85,3 +85,21 @@ max      2125.870000
 Name: Amount, dtype: float64
 
 Code : Print the amount details for Normal Transaction
+print(“details of valid transaction”) 
+valid.Amount.describe() 
+Output :
+
+Amount details of valid transaction
+count    284315.000000
+mean         88.291022
+std         250.105092
+min           0.000000
+25%           5.650000
+50%          22.000000
+75%          77.050000
+max       25691.160000
+Name: Amount, dtype: float64
+As we can clearly notice from this, the average Money transaction for the fraudulent ones is more. This makes this problem crucial to deal with.
+
+Code : Plotting the Correlation Matrix
+The correlation matrix graphically gives us an idea of how features correlate with each other and can help us predict what are the features that are most relevant for the prediction.
