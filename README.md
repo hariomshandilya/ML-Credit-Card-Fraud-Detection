@@ -103,3 +103,8 @@ As we can clearly notice from this, the average Money transaction for the fraudu
 
 Code : Plotting the Correlation Matrix
 The correlation matrix graphically gives us an idea of how features correlate with each other and can help us predict what are the features that are most relevant for the prediction.
+# Correlation matrix 
+corrmat = data.corr() 
+fig = plt.figure(figsize = (12, 9)) 
+sns.heatmap(corrmat, vmax = .8, square = True) 
+plt.show() 
